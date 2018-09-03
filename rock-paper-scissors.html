@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <title>Rock Paper Scissors</title>
+</head>
+<body>
+<div class="container mb-3">
+    <div class="row my-3">
+        <h1>Rock, Paper, Scissors</h1>
+    </div>
+    <div class="row">
+        <p class="h5">Click to make your selction.</p>
+    </div>
+    <div class="row my-3 py-2">
+        <div class="col-md-4 border border-dark" id="rockDiv">
+            <img src="./assets/images/rock.jpg" alt="a rock" class="img-fluid">
+            <p class="text-center">Rock</p>
+        </div>
+        <div class="col-md-4 border border-dark" id="paperDiv">
+            <img src="./assets/images/paper.jpg" alt="a crumpled piece of paper" class="img-fluid">
+            <p class="text-center">Paper</p>
+        </div>
+        <div class="col-md-4 border border-dark" id="scissorsDiv">
+            <img src="./assets/images/scissors.jpg" alt="a pair of scissors" class="img-fluid">
+            <p class="text-center">Scissors</p>
+        </div>
+    </div>
+    <div class="row mb-3 d-none" id="choicesDiv">
+        <div class="col py-2 border border-dark" id="userShootDiv">
+            <p>You shoot <span id="userShootText"></span>.</p>
+            <img src="" id="userShootImg" class="img-fluid">
+        </div>
+        <div class="col py-2 border border-dark" id="compShootDiv">
+            <p>Computer shoots <span id="compShootText"></span>.</p>
+            <img src="" id="compShootImg" class="img-fluid">
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md border border-dark pt-2 display-4 d-none" id="outcomeDiv">
+            <p>You <span id="gameOutcome"></span> this round!</p>
+        </div>
+        <div class="col-md border border-dark pt-2">
+            <div class="row text-center">
+                <div class="col">
+                    <p class="pb-3">Score</p>
+                </div>
+            </div>
+            <div class="row px-3">
+                <div class="col">
+                    <p>You: <span id="userScore">0</p>
+                </div>
+                <div class="col">
+                    <p>Computer: <span id="compScore">0</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<script src="./assets/js/rps.js"></script>
+</body>
+</html>
